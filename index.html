@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenBLog</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #blogs-container {
+            height: 75vh;
+            border: 1px solid black;
+        }
+        #write-post {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid;
+        }
+        #post-title-input {
+            height: 10%;
+        }
+        #post-content-input {
+            height: 100%;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>
+            OpenBlog
+        </h3>
+        <div>
+            <a href="#">sign-in</a>
+            <a href="#">sign-up</a>
+        </div>
+    </header>
+    <main>
+        <!-- Posts -->
+        <aside id="blogs-container">
+        </aside>
+        <aside id="write-post">
+            <input type="text" id="post-title-input">
+            <textarea id="post-content-input">
+            </textarea>
+        </aside>
+    </main>
+</body>
+</html>
